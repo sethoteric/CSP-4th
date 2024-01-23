@@ -19,7 +19,63 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-
+        div#face {
+            width: 40vw;
+            height: 40vw;
+            max-width: 400px;
+            max-height: 400px;
+            margin: 0 auto;
+            position: relative;
+            background: rgb(3, 36, 146);
+            margin-top: 2rem;
+        }
+        
+        div#face,
+        div#face * {
+            border-radius: 50%;
+        }
+        
+        .eye {
+            width: 25%;
+            height: 25%;
+            background: #fff;
+            position: absolute;
+            top: 20%;
+        }
+        
+        .left.eye {
+            left: 18%;
+        }
+        
+        .right.eye {
+            right: 18%;
+        }
+        
+        .pupil {
+            background: #ff0000;
+            width: 50%;
+            height: 50%;
+            position: relative;
+            left: 9%;
+            transform-origin: bottom;
+        }
+        
+        #mouth {
+            position: relative;
+            width: 60%;
+            left: 20%;
+            height: 25%;
+            border: 1vw solid transparent;
+            border-radius: 50%;
+            top: 50%;
+            border-bottom-color: #000;
+        }
+        
+        #banner {
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -32,7 +88,7 @@
             <p>
                 This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
             </p>
-            <marquee>
+            <marquee id="banner">
                 If you're seeing this, Earth has taken to the stars.
             </marquee>
 
@@ -82,9 +138,33 @@
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
         <div id="banner">
+            Find folding fluctuations for flying faintly.
         </div>
         <div id="face">
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div class="right eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div id="mouth">
+            </div>
+        </div>
+        Earthmen, after taking to the stars, look how happy
+        </div>
+        <div id="specific">
+            <h1>Quotes by Sartre and Asimov</h1>
+            <section>
+                <h2>Sartre</h2>
+                <p>"One is not just a subject, but an object to others' subjects." | Who others think you are, may well become more important than who you believe you are. -sethoteric</p>
+            </section>
 
+            <section>
+                <h2>Asimov</h2>
+                <p>"There are no nations! There is only humanity. And if we don’t come to understand that right soon, there will be no nations, because there will be no humanity".</p>
+            </section>
         </div>
     </main>
 
@@ -92,7 +172,7 @@
     <footer>
 
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+            <center> Webpage made by <a href="#" target="_blank">[sethoteric]</a></center>
         </p>
 
     </footer>
