@@ -19,7 +19,77 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-
+        #banner {
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: center;
+        }
+        
+        .example {
+            font-size: 20px;
+        }
+        
+        div#face {
+            width: 40vw;
+            height: 50vw;
+            max-width: 400px;
+            max-height: 400px;
+            margin: 0 auto;
+            position: relative;
+            background: olivedrab;
+            margin-top: 2rem;
+        }
+        
+        div#face,
+        div#face * {
+            border-radius: 40%;
+        }
+        
+        .eye {
+            width: 25%;
+            height: 25%;
+            background: #fff;
+            position: absolute;
+            top: 20%;
+        }
+        
+        .left.eye {
+            left: 20%;
+        }
+        
+        .right.eye {
+            right: 20%;
+        }
+        
+        .pupil {
+            background: #000;
+            width: 50%;
+            height: 50%;
+            position: relative;
+            left: 25%;
+            transform-origin: center;
+        }
+        
+        #mouth {
+            position: relative;
+            width: 60%;
+            left: 20%;
+            height: 25%;
+            border: 1vw solid transparent;
+            border-radius: 50%;
+            top: 50%;
+            border-bottom-color: #000;
+        }
+        
+        section {
+            border: 3px dashed red;
+            border-radius: 2vw;
+            margin-bottom: 1vw;
+        }
+        
+        section h2 {
+            font-family: "Lucida Console", "Courier New", monospace;
+        }
     </style>
 </head>
 
@@ -30,26 +100,70 @@
         <h1>About Me</h1>
         <div id="tags">
             <p>
-                This is my first webpage! I was able to code all the HTML and CSS in order to make it.
-                Watch out world of web design here I come!
+                This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
             </p>
 
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+            <h1>Go Sabers!!</h1>
+            <h2>Welcome to Shakopee</h2>
+            <h3>Shakopee High School</h3>
+            <h4>Black, Red, White</h4>
+            <h5>Go Sabers, Go!</h5>
+            <h6>100th 17th Ave West</h6>
 
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <p>
+                <del>Yariel</del> Yusuf is <ins>super</ins> good at using GitHub
+            </p>
+            <p>
+                Pythagorean Theorem a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
+            </p>
+            <hr>
+            <p>
+                Jacob is using <progress value="185" max="200"></progress >% of his brain
+            </p>
+            <p>
+               The <abbr title="National Football League" > NFL </abbr> is awesome.
+            </p>
+            
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
-        <div id="banner">
+
+        <div id="specific">
+            <h1>PUT YOUR BIG TITLE HERE</h1>
+            <section>
+                <h2>Introduction or 1st Point</h2>
+                <p>Content in here that explains your 1st point</p>
+            </section>
+        
+            <section>
+                <h2>2nd Point</h2>
+                <p>Content in here that explains your 2nd point</p>
+            </section>
+        </div>
+
+        <div id="banner" class="example">
+            TEXT FOR BANNER
+            <p> More stuff for banner</p>
+            <marquee>I'm Pickle RICK!!</marquee>
         </div>
         <div id="face">
-
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div class="right eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div id="mouth">
+           </div>
         </div>
     </main>
 
